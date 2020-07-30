@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+$backgroundBase: #9df9ef;
+$darkAccent: #224B4B;
+$shadow: 1px 1px 10px 2px darken($backgroundBase, 20%);
+$default-border: 1px solid darken($backgroundBase, 35%);
+%textArea {
+    background-color: $backgroundBase;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    font-size: 16px;
+    border: $default-border;
+    box-shadow: $shadow;
+    font-family: 'Actor';
+    @media (min-width: 992px){
+      height: 600px;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background:darken($backgroundBase, 40%);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: darken($backgroundBase, 20%) ;
+    border-radius: 20px;
+    border: 3px solid darken($backgroundBase, 40%);
+  }
+
+body {
+    max-width: 100%; 
+    overflow-x: hidden;
+    background-color: darken($backgroundBase, 40%);
+    font-family: Russo One;
+    scrollbar-color: darken($backgroundBase, 20%) darken($backgroundBase, 40%);   /* scroll thumb & track */ 
+}
+
+.heading {
+    text-align: center;
+    margin: 20px auto;
+}
+
+hr {
+    border: 3px solid darken($backgroundBase, 20%);
+    box-shadow: $shadow;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.input {
+  @extend %textArea;
+  outline: none;
+}
+
+.output {
+  @extend %textArea;
+  overflow: auto;
+  h1 {
+    border-bottom: 2px solid $darkAccent;
+  }
+
+  h2 {
+    border-bottom: 1px solid $darkAccent;
+    padding-top: 10px;
+  }
+
+  h3 {
+    padding: 10px 0px;
+  }
+  
+  a{
+    text-decoration: underline;
+  }
+
+  code {
+    background: white;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  pre {
+    background: white;
+    padding: 5px 0 5px 5px;
+  }
+
+  blockquote {
+    border-left: 3px solid #224B4B;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+
+  td, th {
+    border: 2px solid $darkAccent;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+footer {
+    position: relative;
+    left: 45%;
+    font-size: 1.4em;
+    align-items: center;
+    a {
+        color: #333;
+    }
+    a:hover{
+        color: black;
+    }
+    a:visited {
+        color: #333;
+    }
+}
+
+@media (max-width: 480px)  {
+    .output {
+        margin-bottom: 20px;
+    }
+    footer {
+        left:40%;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 768px)  {
+    .output {
+        margin-bottom: 20px;
+    }
+    footer {
+        left: 40%;
+    }
+  } 

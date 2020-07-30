@@ -1,13 +1,2 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url("https://fonts.googleapis.com/css?family=Russo+One");.input,.output{background-color:#9df9ef;border-radius:4px;padding:10px;width:100%;height:400px;font-size:16px;border:1px solid #0dd6c1;box-shadow:1px 1px 10px 2px #3df3df;font-family:'Actor'}@media (min-width: 992px){.input,.output{height:600px}}*::-webkit-scrollbar{width:12px}*::-webkit-scrollbar-track{background:#0cbeab}*::-webkit-scrollbar-thumb{background-color:#3df3df;border-radius:20px;border:3px solid #0cbeab}body{max-width:100%;overflow-x:hidden;background-color:#0cbeab;font-family:Russo One;scrollbar-color:#3df3df #0cbeab}.heading{text-align:center;margin:20px auto}hr{border:3px solid #3df3df;box-shadow:1px 1px 10px 2px #3df3df;border-radius:3px;margin-bottom:10px}.input{outline:none}.output{overflow:auto}.output h1{border-bottom:2px solid #224B4B}.output h2{border-bottom:1px solid #224B4B;padding-top:10px}.output h3{padding:10px 0px}.output a{text-decoration:underline}.output code{background:white;padding:1px 4px 2px 4px;font-size:12px;font-weight:bold}.output pre{background:white;padding:5px 0 5px 5px}.output blockquote{border-left:3px solid #224B4B;padding-left:5px;margin-left:25px}.output table{border-collapse:collapse;margin-bottom:10px}.output td,.output th{border:2px solid #224B4B;padding-left:5px;padding-right:5px}footer{position:relative;left:45%;font-size:1.4em;align-items:center}footer a{color:#333}footer a:hover{color:black}footer a:visited{color:#333}@media (max-width: 480px){.output{margin-bottom:20px}footer{left:40%}}@media (min-width: 480px) and (max-width: 768px){.output{margin-bottom:20px}footer{left:40%}}
+/*# sourceMappingURL=index.css.map */
