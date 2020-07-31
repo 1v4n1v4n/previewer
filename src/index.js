@@ -73,8 +73,8 @@ class App extends React.Component {
 
 class Previewer extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       markdown: placeholder
     };
