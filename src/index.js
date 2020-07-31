@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import Container from 'react-bootstrap/Container'
 
 // global variable needed for compiling markdown to HTML synchronously
 let marked = require("marked");
@@ -86,6 +86,7 @@ class Previewer extends React.Component {
 
   render() {
     return (  
+    <Container fluid>
     <div className="row">
       <div className="col-md-6">
       {/* Input Area */}
@@ -110,6 +111,7 @@ class Previewer extends React.Component {
         </div>
       </div>
     </div>  
+    </Container>
     )
   }
 }
